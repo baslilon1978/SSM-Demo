@@ -50,9 +50,13 @@ public class ReportController {
 	public String list(HttpServletRequest request, Model model) {
 		return "report";
 	}
-	
 
-	
+	/**
+	 *
+	 * @param e
+	 * @param request
+	 * @return
+	 */
 	@ExceptionHandler(Exception.class)
 	public String exception(Exception e, HttpServletRequest request) {
 		request.setAttribute("exception", e);
