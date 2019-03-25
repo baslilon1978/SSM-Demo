@@ -28,7 +28,7 @@ public class AreaService implements IAreaService{
 	private AreaDao areaDao;
 	
 	public DatatablesView<Area> getAreaByCondition(QueryCondition query) {
-		DatatablesView<Area> dataView = new DatatablesView<Area>();
+		DatatablesView<Area> dataView = new DatatablesView<Area>() ;
 		
 		//构建查询条件
 		WherePrams where = areaDao.structureConditon(query);
